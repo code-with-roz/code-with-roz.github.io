@@ -1,0 +1,100 @@
+{
+  "main": {
+    "id": "7aef1bb31b2f0fb1",
+    "type": "split",
+    "children": [
+      {
+        "id": "8a5c8dcd456b8973",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "2019-02-13-introducing-reverie-jekyll-theme.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "06caed192c8b21ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "ffaed122f8df8ee9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30509f8a10ccb339",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "3b79f8a8dbcddc39",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 505
+  },
+  "right": {
+    "id": "f066a8b9268b7a83",
+    "type": "split",
+    "children": [
+      {
+        "id": "38121696b5f3d5d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ee6a7f922f4e436",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2019-02-13-introducing-reverie-jekyll-theme.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8a5c8dcd456b8973",
+  "lastOpenFiles": [
+    "2019-02-13-introducing-reverie-jekyll-theme.md",
+    "2019-7-27-super-long-article.md",
+    "2019-7-27-this-post-demonstrates-post-content-styles.md",
+    "2019-7-28-super-short-article.md",
+    "2019-08-08-no-title-posts.md",
+    "2019-8-12-code-snippets.md",
+    "2019-12-11-pullquotes.md"
+  ]
+}
