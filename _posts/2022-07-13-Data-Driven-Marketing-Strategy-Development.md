@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bank Marketing Strategy Development
+title: Data Driven Marketing Strategy 
 categories: [Prediction]
 ---
 
