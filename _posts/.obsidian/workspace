@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-07-13-Data-Driven-Marketing-Strategy-Development.md",
+            "file": "2022-07-13-Making-Predictions-Using-Logistic-Regression.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 505
+    "width": 446
   },
   "right": {
     "id": "f066a8b9268b7a83",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-07-13-Data-Driven-Marketing-Strategy-Development.md",
+                "file": "2022-07-13-Making-Predictions-Using-Logistic-Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -79,8 +79,17 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "a032d7ac2c7f7549",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -89,7 +98,9 @@
   },
   "active": "8a5c8dcd456b8973",
   "lastOpenFiles": [
-    "2022-07-13-Data-Driven-Marketing-Strategy-Development.md",
+    "2022-07-13-Making-Predictions-Using-Logistic-Regression.md",
+    "2022-07-15-Data-Driven-Marketing-Strategy-Development.md",
+    "2022-07-14-kNN-Clustering.md",
     "2019-7-27-this-post-demonstrates-post-content-styles.md",
     "2019-7-28-super-short-article.md",
     "2019-08-08-no-title-posts.md",

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Driven Marketing Strategy 
-categories: [Prediction]
+title: kNN Clustering 
+categories: [Clustering]
 ---
 
 Financial intitutions invest enourmous amounts of money running campaigns on new product offerings to their existing customers and to acquire new business through traditional media and (most recently) digital media strategies. The use of these marketing strategies is to determine the customer segments that would be most likely to subscribe to their product offerring. 
@@ -24,55 +24,38 @@ The total data set consists of 50 422 observations with 16 attributes (includin
 
 The list of varibles considered were:
 
-|# | Variable label        | Variable description  |
-|--| --------------------- | --------------------- | 
-|1 | lorem ipsum           | lorem ipsum dolor     | 
-|2 | lorem ipsum dolor sit | lorem ipsum dolor sit | 
-|3 | lorem ipsum dolor sit | lorem ipsum dolor sit | 
-|4 | lorem ipsum dolor sit | lorem ipsum dolor sit | 
+| #   | Variable label   | Variable Description                                                                       |
+| --- |:---------------- |:------------------------------------------------------------------------------------------ |
+| 1   | age              | Numeric: Age of the client                                                                 |
+| 2   | job              | Categorical                                                                                |
+| 3   | marital          | Client's marital status                                                                    |
+| 4   | education        | Education level achieved                                                                   |
+| 5   | default          | Has credit in default?                                                                     |
+| 6   | housing          | Has a housing loan?                                                                        |
+| 7   | loan             | Has a personal loan?                                                                       |
+| 8   | contact          | Contact communication type                                                                 |
+| 9   | month            | Month of the year (Jan to Dec)                                                             |
+| 10  | campaign         | umber of contacts performed during the campaign and for the specific client                |
+| 11  | pdays            | Number of days that passed by after the client was last contacted from a previous campaign |
+| 12  | previous         | Number of times the client had been contacted before the campaign                          |
+| 13  | poutcomes        | Outcomes of previous marketing campaigns                                                   |
+| 14  | y                | Did the client subcribe a term deposit? (yes or no)                                        |
 
 The data consisted of both numeric (continuous) variables and categorical variables, therefore, to determine whether there was any correlation between the attributes the following three metrices were used:
 1. Contingency Coefficient ($\mathcal{C}$) - Categorical Data "coerrelation"
 2. One way ANOVA test - Categorical and Numerica data "correlation"
 3. Pearson's correlation coefficient - Numeric data correlation
 
-![](/images/reverie-demo.png)
-
-
-## Identifying desireable customer segments
-
-
-![](/images/reverie-demo.png)
-
-
-
-- 
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
+Given the features were not correlated, I went forward with the Logistic regression process to estimate a model. 
 
 <div style="text-align: center;">
  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D6KJY&placement=wwwamitmerchantcom" id="_carbonads_js"></script>
 </div>
 
 ## Making Predictions
+### Step 1) Variable Selection and Model Development
 
 
-
-
-### Step 1) Linear regression
 
 Fork [this repository](https://github.com/amitmerchant1990/reverie), then rename the repository to `yourgithubusername.github.io`.
 
@@ -80,13 +63,13 @@ Alternatively, you can use [Use this template](https://github.com/amitmerchant19
 
 Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
 
-### Step 2) Logistic 
+### Step 2) Model Testing  
 
 Enter your site name, description, avatar and many other options by editing the `_config.yml` file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here.
 
 Making a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon.
 
-### Step 3) Publish your first blog post
+### Step 3) New Data Predictions
 
 Create a new file called `/_posts/2019-2-13-Hello-World.md` to publish your first blog post. That's all you need to do to publish your first blog post! This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy while writing the posts.
 
