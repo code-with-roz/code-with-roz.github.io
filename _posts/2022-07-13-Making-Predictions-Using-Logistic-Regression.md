@@ -103,6 +103,10 @@ Both the Linear and Logistic regression models performed decently in predicting 
 
 Overall, the logistic model was better suited to conducting the regression analysis given the categorical response variable. However, the use of a linear regression model was proven to be feasible, just more computationally expensive.
 
+The value lies in the interpretation of the results.
+
+
+
 
 
 Fork [this repository](https://github.com/amitmerchant1990/reverie), then rename the repository to `yourgithubusername.github.io`.
