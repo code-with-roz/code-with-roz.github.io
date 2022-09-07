@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 446
+    "width": 456.5
   },
   "right": {
     "id": "f066a8b9268b7a83",
@@ -98,15 +98,15 @@
   },
   "active": "8a5c8dcd456b8973",
   "lastOpenFiles": [
-    "2022-07-13-Making-Predictions-Using-Logistic-Regression.md",
     "2022-07-15-Data-Driven-Marketing-Strategy-Development.md",
-    "2022-07-14-kNN-Clustering.md",
-    "2019-7-27-this-post-demonstrates-post-content-styles.md",
-    "2019-7-28-super-short-article.md",
-    "2019-08-08-no-title-posts.md",
-    "2019-8-12-code-snippets.md",
+    "2022-07-13-Making-Predictions-Using-Logistic-Regression.md",
+    "Bank-marketing-dataset-statistical-analysis.Rmd.md",
     "2019-12-11-pullquotes.md",
+    "2019-8-12-code-snippets.md",
+    "2019-08-08-no-title-posts.md",
+    "2019-7-28-super-short-article.md",
+    "2019-7-27-this-post-demonstrates-post-content-styles.md",
     "2019-7-27-super-long-article.md",
-    "images/reverie-demo.png.md"
+    "2022-07-14-kNN-Clustering.md"
   ]
 }

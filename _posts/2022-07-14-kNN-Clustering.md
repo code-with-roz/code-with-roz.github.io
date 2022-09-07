@@ -4,6 +4,30 @@ title: kNN Clustering
 categories: [Clustering]
 ---
 
+Clustering is a fundamental statistical process. Clusterring enables us to categories different data points and thereafter infer key insights from the categories found and thereafter empower s in making decisions based on these insights drawn from the different categories. The process of categorising items based on colour, behaviour, shape, history is as old as the evolution of the human mind. We insiticively carry out clustering in our every day lives by categories the objects around us. Knowing that a "dog" falls under the category of "animals", and can be further classified as a "canine" under the "mammal" categroy is an example of sophisticated clustering processes that our minds conduct in a split second that came about from the extensive learning we underwent while in school. Primary is looking a lot more sofisticated than you thought, isn't it? 
+
+Our goal as data scientists is to program such clustering processes into machines, and after countless iterations refine the the resulting clusters so that if new data is fed into this machine, it can accurately place the new data points in the right categories based on the similarity (or dissimilarity) metric programmed into the process. For example, let's consider retail, clustering processes can help us identify different customer segments based on factors such as age, spending habits, income or other demographic traits. This informations empowers retail companies to be able to make data-driven decisions on designing marketing campaigns, modifying products or whatever other initiatives that would result in increased profits (all within ethical bounds of course). 
+
+Different clustering methods used in statistics include: Hierarchical clustering, k means clustering, ........ When considering real-world conditions in most cases unsupervised machine learning techniqes are the most appropriate, given the data properties are unkown or diffficult to interpret....... In these cases Density based clustering is used. 
+
+In this post, I will explore the kNN mode seeking ensemble method proposed by Myhre et. al (2018), which involved forming a clustering ensemble consisting of repeated and bootstrapped runs of the recently developed kNN mode seeking algorithm. For more information you can find their published article here: .... This method enables the "deterministic" kNN mode seeking method to be applied as an unsupervised machine learning technique by introducing randomness into the selection process of the k-value and using bootstrapping techniques to increase the robustness of the method and find the optimum k-value based on the consensus value..... 
+
+An arbitrary dataset is used, you can find the dataset here: ... All programming was done in R
+
+
+
+
+
+
+
+
+
+References: 
+Original Source code and data: Prof...., University of Pretoria.
+Article: Myhre et. al (2018)
+
+The approach of this post is to used the kNN mode seeking ensemble method on arbitrary data and measure the performance, while commenting on the 
+
 Financial intitutions invest enourmous amounts of money running campaigns on new product offerings to their existing customers and to acquire new business through traditional media and (most recently) digital media strategies. The use of these marketing strategies is to determine the customer segments that would be most likely to subscribe to their product offerring. 
 
 To determine these different customer segments, statistical analysis is usally carried out on historical data collected by the financial instituation (such as a bank), and statisticians and/or data scientist attempt to predict the likelihood of a customer (with a certain combination of attributes) subscrbing to a product. These results then inform the most appropriate marketing strategy that should be followed to maximise customer subscription. 
