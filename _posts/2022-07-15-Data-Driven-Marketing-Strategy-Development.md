@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Developing Data Driven Marketing Strategies 
-categories: [Regression | Clustering]
+title: Making Predictions using Logistic Regression
+categories: [Regression]
 ---
 
 

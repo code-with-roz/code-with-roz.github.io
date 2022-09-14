@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Making Predictions Using Logistic Regression 
+title: Developing Data Driven Marketing Strategies 
 categories: [Regression]
 ---
 
@@ -25,6 +25,10 @@ Development of a proposed marketing strategy involved:
 
 All coding was done in R. You can find the source code  [here](https://github.com/code-with-roz/Bank-Marketing-Dataset.git) with the steps outlined above explained in detail. This post only focuses on the intepretation of the results. The dataset used can be found here: [Dataset](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing). 
 
+image/results
+![](/images/reverie-demo.png)
+
+Intepretation:
 
 
 
