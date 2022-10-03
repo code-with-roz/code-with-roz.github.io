@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-07-13-Making-Predictions-Using-Logistic-Regression.md",
+            "file": "2022-10-10-kNN-Clustering.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 456.5
+    "width": 364.5
   },
   "right": {
     "id": "f066a8b9268b7a83",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-07-13-Making-Predictions-Using-Logistic-Regression.md",
+                "file": "2022-10-10-kNN-Clustering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,15 +98,15 @@
   },
   "active": "74434fec9ff6bc2e",
   "lastOpenFiles": [
-    "2022-07-15-Data-Driven-Marketing-Strategy-Development.md",
-    "2022-07-14-kNN-Clustering.md",
-    "2022-07-13-Making-Predictions-Using-Logistic-Regression.md",
-    "Bank-marketing-dataset-statistical-analysis.Rmd.md",
+    "2022-10-03-MVO-model.md",
+    "2022-07-16-Developing-Data-Driven-Marketing-Strategies.md",
+    "2022-07-15-Making-Predictions-using-Logistic-Regression.md",
+    "2022-07-04-Customer-Segmentation.md",
     "2019-12-11-pullquotes.md",
-    "2019-8-12-code-snippets.md",
-    "2019-08-08-no-title-posts.md",
-    "2019-7-28-super-short-article.md",
+    "2022-10-10-kNN-Clustering.md",
     "2019-7-27-this-post-demonstrates-post-content-styles.md",
-    "2019-7-27-super-long-article.md"
+    "2019-7-28-super-short-article.md",
+    "2019-08-08-no-title-posts.md",
+    "Untitled.md"
   ]
 }
