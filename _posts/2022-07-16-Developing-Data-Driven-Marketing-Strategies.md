@@ -4,35 +4,30 @@ title: Developing Data Driven Marketing Strategies
 categories: [Regression | Marketing]
 ---
 
-Financial intitutions invest enourmous amounts of money running campaigns on new product offerings to their existing customers and to acquire new business through traditional media and (most recently) digital media strategies. The use of these marketing strategies is to determine the customer segments that would be most likely to subscribe to their product offerring. 
+As a marketer, you know the importance of using data to drive your marketing strategy. By collecting and analysing data, you can better understand your target audience, identify opportunities for growth, and optimize your marketing efforts to achieve better results. One way to do this is by using regression analysis, a statistical technique that can help you understand the relationship between different variables and make predictions about future outcomes.
 
-image/graphic of market segments
-![](/images/reverie-demo.png)
+So, what is regression analysis and how can you use it to develop a data-driven marketing strategy?
+
+Regression analysis is a statistical method that allows you to examine the relationship between two or more variables. For example, you might use regression analysis to understand the relationship between the amount of money you spend on advertising and the number of sales you make. By analysing this relationship, you can determine the impact that changes in your advertising budget have on your sales and use this information to optimize your marketing spend.
 
 Take the example of ..... campaign ran by ... bank to market their ... product. With such a massive investment returns need to be guaranteed, or at least extremely probable. This is where the importance of designing marketing campaigns based on concrete data analytics becomes invaluable. 
 
-image/graphic of analytics 
-![](/images/reverie-demo.png)
+There are several different types of regression analysis, including linear regression, logistic regression, and multi-variate regression. Each of these techniques has its own strengths and limitations, and the right choice for your marketing strategy will depend on the specific goals you are trying to achieve and the type of data you have available.
 
-To determine these different customer segments, statistical analysis is usally carried out on historical data collected by the financial instituation (such as a bank), and statisticians and/or data scientist attempt to predict the likelihood of a customer (with a certain combination of attributes) subscrbing to a product. These results then inform the most appropriate marketing strategy that should be followed to maximise customer subscription. 
+Let's take the example of a bank that wants to determine the likelihood of an exisitng customer subscribing to their new product. The data scientist/analyst involved in developing the marketing strategy could use either linear or logistic regression. In this case, given that the outcome varible would be categorical, ("yes" or "no"), logististic regression would be better suited for the task. The table below shows the likelihood of a customer subscribing to the new product given factors such as ...... Table shows the results after conducting the regression (The full regression method followed can be found here (link)).
 
-Thus bringing us to the example of a marketing campaign ran by a Portuguese banking institution that had the goal of making predictions on whether an exisiting customer would subscribe to their new "bank term deposit" product. The predictions made involved carrying out a Logistic Regression taking into account the significant factors that would influence the probability of a customer saying "yes" to the product subscription. The marketing campaigns were based on phone calls (either cellular or telephone) and often multiple contact sessions with the client were necessary to assess the client’s receptivity to subscribing to the “bank term deposit” product.
 
-Development of a proposed marketing strategy involved:
-1. Feature selection process to determine the significant variables to be used in the regression process
-2. Logistic regression and model performance evaluation to determine whether reliable predictions can be made using the estimated model
-3. Insight derivation and conclusions on the most appropriate marketing strategy to be followed
+Table of results
 
-All coding was done in R. You can find the source code  [here](https://github.com/code-with-roz/Bank-Marketing-Dataset.git) with the steps outlined above explained in detail. This post only focuses on the intepretation of the results. The dataset used can be found here: [Dataset](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing). 
 
-image/results
-![](/images/reverie-demo.png)
+In addition to regression analysis, there are several other data science techniques that can be useful for developing a data-driven marketing strategy. For example, you might use machine learning algorithms to analyse customer behaviour and predict which marketing messages are most likely to be effective. You might also use text analysis techniques to understand customer sentiment and identify potential problems or areas for improvement.
 
-Intepretation:
+One key to success when using data science techniques to develop a marketing strategy is to have a clear understanding of your goals and the data you have available. By setting clear goals and identifying the data that will be most useful in achieving those goals, you can ensure that your data-driven marketing efforts are focused and effective.
 
+In the end, marketing is creating value for your customers while extracting value from them (McDonald and Wilson, 2011). To create maximum value, finding a way to accurately target your desired customer segment is essential, however, determining this segment takes time and energy, but with access to the right type of data this process can be optimised using statistical analysis. 
 
+It's also important to remember that data science is just one piece of the puzzle when it comes to developing a successful marketing strategy. While data can provide valuable insights and help you make informed decisions, it's also important to consider other factors such as your target audience, your competitive landscape, and your overall business goals. By combining data-driven insights with a broader understanding of your business and your customers, you can create a marketing strategy that is both effective and aligned with your overall business objectives.
 
-Marketing is creating value for your customers while extracting value from them (McDonald and Wilson, 2011). To create maximum value, finding a way to accurately target your desired customer segment is essential, however, determining this segment takes time and energy, but with access to the right type of data this process can be optimised using statistical analysis.
 
 
 
@@ -52,152 +47,10 @@ Marketing is creating value for your customers while extracting value from them 
 
 
 
-Fork [this repository](https://github.com/amitmerchant1990/reverie), then rename the repository to `yourgithubusername.github.io`.
 
-Alternatively, you can use [Use this template](https://github.com/amitmerchant1990/reverie/generate) button if you want to create a repository with a clean commit history which will use Reverie as a template.
 
-Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
 
-Enter your site name, description, avatar and many other options by editing the `_config.yml` file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here.
 
-Making a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon.
 
-Create a new file called `/_posts/2019-2-13-Hello-World.md` to publish your first blog post. That's all you need to do to publish your first blog post! This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy while writing the posts.
 
-> You can add additional posts in the browser on GitHub.com too! Just hit the <kbd>Create new file</kbd> button in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
-
-
-
-
-You can categorize your content based on `categories` in Reverie. For this, you just need to add `categories` in front matter like below:
-
-For adding single category:
-
-```md
-categories: JavaScript
-```
-
-For adding multiple categories:
-
-```md
-categories: [PHP, Laravel]
-```
-
-The contegorized content can be shown over this URL: <https://yourgithubusername.github.io/categories/>
-
-## RSS
-
-The generated [RSS feed](https://en.wikipedia.org/wiki/RSS) of your blog can be found at <https://yourgithubusername.github.io/feed>. You can see the example RSS feed over [here](https://www.amitmerchant.com/reverie/feed).
-
-## Sitemap
-
-The generated sitemap of your blog can be found at <https://yourgithubusername.github.io/sitemap>. You can see the example sitemap feed over [here](https://www.amitmerchant.com/reverie/sitemap).
-
-## License
-
-MIT
-
-
-The approach of this post is to used the kNN mode seeking ensemble method on arbitrary data and measure the performance, while commenting on the 
-
-Financial intitutions invest enourmous amounts of money running campaigns on new product offerings to their existing customers and to acquire new business through traditional media and (most recently) digital media strategies. The use of these marketing strategies is to determine the customer segments that would be most likely to subscribe to their product offerring. 
-
-To determine these different customer segments, statistical analysis is usally carried out on historical data collected by the financial instituation (such as a bank), and statisticians and/or data scientist attempt to predict the likelihood of a customer (with a certain combination of attributes) subscrbing to a product. These results then inform the most appropriate marketing strategy that should be followed to maximise customer subscription. 
-
-
-
-Thus bringing us to the example of a marketing campaign ran by a Portuguese banking institution that had the goal of making predictions on whether an exisiting customer would subscribe to the "bank term deposit" product they were offering. The predictions made involved carrying out a Logistic Regression analysis taking into account the significant factors that would influence the probability of a customer saying "yes" to the product subscription. The marketing campaigns were based on phone calls (either cellular or telephone) and often multiple contact sessions with the client was necessary to assess the client’s receptivity to subscribing to the “bank term deposit” product.
-
-Development of a proposed marketing strategy involved:
-1. Feature selection process to determine the significant variables to be used in the regression process
-2. Logistic regression and model performance evaluation to determine whether reliable predictions can be made using the estimated model
-3. Insight derivation and conclusions on the most appropriate marketing strategy to be followed
-
-## Feature Selection
-The dataset can be found here: [Dataset](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing). 
-
-The total data set consists of 50 422 observations with 16 attributes (including the response variable). The data set was split into two sets; one set was used for the regression process, while the other was used to conduct the predictions. The two sets will be referred to as the “Regression set” and the “Prediction set” respectively. The regression set consisted of 45 211 observations and the prediction set consisted of 5 211 observations.
-
-The list of varibles considered were:
-
-| #   | Variable label   | Variable Description                                                                       |
-| --- |:---------------- |:------------------------------------------------------------------------------------------ |
-| 1   | age              | Numeric: Age of the client                                                                 |
-| 2   | job              | Categorical                                                                                |
-| 3   | marital          | Client's marital status                                                                    |
-| 4   | education        | Education level achieved                                                                   |
-| 5   | default          | Has credit in default?                                                                     |
-| 6   | housing          | Has a housing loan?                                                                        |
-| 7   | loan             | Has a personal loan?                                                                       |
-| 8   | contact          | Contact communication type                                                                 |
-| 9   | month            | Month of the year (Jan to Dec)                                                             |
-| 10  | campaign         | umber of contacts performed during the campaign and for the specific client                |
-| 11  | pdays            | Number of days that passed by after the client was last contacted from a previous campaign |
-| 12  | previous         | Number of times the client had been contacted before the campaign                          |
-| 13  | poutcomes        | Outcomes of previous marketing campaigns                                                   |
-| 14  | y                | Did the client subcribe a term deposit? (yes or no)                                        |
-
-The data consisted of both numeric (continuous) variables and categorical variables, therefore, to determine whether there was any correlation between the attributes the following three metrices were used:
-1. Contingency Coefficient ($\mathcal{C}$) - Categorical Data "coerrelation"
-2. One way ANOVA test - Categorical and Numerica data "correlation"
-3. Pearson's correlation coefficient - Numeric data correlation
-
-Given the features were not correlated, I went forward with the Logistic regression process to estimate a model. 
-
-<div style="text-align: center;">
- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D6KJY&placement=wwwamitmerchantcom" id="_carbonads_js"></script>
-</div>
-
-## Making Predictions
-### Step 1) Variable Selection and Model Development
-
-
-
-Fork [this repository](https://github.com/amitmerchant1990/reverie), then rename the repository to `yourgithubusername.github.io`.
-
-Alternatively, you can use [Use this template](https://github.com/amitmerchant1990/reverie/generate) button if you want to create a repository with a clean commit history which will use Reverie as a template.
-
-Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
-
-### Step 2) Model Testing  
-
-Enter your site name, description, avatar and many other options by editing the `_config.yml` file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here.
-
-Making a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon.
-
-### Step 3) New Data Predictions
-
-Create a new file called `/_posts/2019-2-13-Hello-World.md` to publish your first blog post. That's all you need to do to publish your first blog post! This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy while writing the posts.
-
-> You can add additional posts in the browser on GitHub.com too! Just hit the <kbd>Create new file</kbd> button in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
-
-## Conclusions and Insights
-
-You can categorize your content based on `categories` in Reverie. For this, you just need to add `categories` in front matter like below:
-
-For adding single category:
-
-```md
-categories: JavaScript
-```
-
-For adding multiple categories:
-
-```md
-categories: [PHP, Laravel]
-```
-
-The contegorized content can be shown over this URL: <https://yourgithubusername.github.io/categories/>
-
-## RSS
-
-The generated [RSS feed](https://en.wikipedia.org/wiki/RSS) of your blog can be found at <https://yourgithubusername.github.io/feed>. You can see the example RSS feed over [here](https://www.amitmerchant.com/reverie/feed).
-
-## Sitemap
-
-The generated sitemap of your blog can be found at <https://yourgithubusername.github.io/sitemap>. You can see the example sitemap feed over [here](https://www.amitmerchant.com/reverie/sitemap).
-
-## License
-
-MIT
