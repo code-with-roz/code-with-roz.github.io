@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customer Segmentation in the Public Transport Sector in South Africa
-categories: [Engineering]
+categories: [Transportation | Engineering]
 ---
 
 Customer segmentation is the process of determining the different customer groups that exist in a market with the aim of defining the group characteristics and thereafter determining the points of potential growth within the segments that will lead to increased market share[3,4,7].
