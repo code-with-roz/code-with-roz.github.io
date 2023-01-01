@@ -4,24 +4,11 @@ title: Making Predictions using Logistic Regression
 categories: [Regression]
 ---
 
-Financial intitutions invest enourmous amounts of money running campaigns on new product offerings to their existing customers and to acquire new business through traditional media and (most recently) digital media strategies. The use of these marketing strategies is to determine the customer segments that would be most likely to subscribe to their product offerring. 
+So, what is logistic regression and how does it work? In a nutshell, logistic regression is a way to predict the likelihood of a certain event occurring. For example, you might use logistic regression to predict the likelihood that a customer will make a purchase based on their past behaviour, or to predict the likelihood that a patient will develop a certain disease based on their medical history. 
 
-To determine these different customer segments, statistical analysis is usally carried out on historical data collected by the financial instituation (such as a bank), and statisticians and/or data scientist attempt to predict the likelihood of a customer (with a certain combination of attributes) subscrbing to a product. These results then inform the most appropriate marketing strategy that should be followed to maximise customer subscription. 
+To use logistic regression, you'll need two things: data and a prediction question. The data could be anything from customer demographics to medical records, and the prediction question could be anything from "Will this customer make a purchase?" to "Will this patient develop diabetes?"
 
-![](/images/reverie-demo.png)
-
-Taking the example of the marketing campaign run by the Portuguese bank, we can derive the best strategy that should be followed to maximise the probability of customers subscribing to the new product offer of the bank.
-
-The general marketing strategy development steps are:
-1. Stating marketing objectives
-2. **Identify the desirable customer segment**
-3. Identify your competition
-4. Describe your product/service
-5. Define place (distribution strategy)
-
-The article will be focused on **step 2** of this developmental process, where the desirable customer segment will be extracted from the historical data collected by the bank.
-
-The data contains the records of previous phone calls carried out to market the new product offer to customers in attempt to get them to subscribe to it. The customer features considered were:
+Let's take the example of a Portugese bank that wanted to predict the likelihood of an exisitng customer subsrcibing to their new product offerring based on factors such as age, income etc. The full list of factors is shown below, with an outcome of either "yes" or "no". The prediction question would then be: "Will this customer subscribe to the new fixed term loan?"
 
 | #   | Variable label   | Variable Description                                                                       |
 | --- |:---------------- |:------------------------------------------------------------------------------------------ |
@@ -40,44 +27,18 @@ The data contains the records of previous phone calls carried out to market the 
 | 13  | poutcomes        | Outcomes of previous marketing campaigns                                                   |
 | 14  | y                | Did the client subcribe a term deposit? (yes or no)                                        |
 
-Initial data processing was carried out to determine the correlation (if any) between the different features listed above. Given the features are a combination of categorical and numeric type data, the following metrics were calculated:
-1. Contingency Coefficient ($\mathcal{C}$) - Categorical Data "coerrelation"
-2. One way ANOVA test - Categorical and Numerica data "correlation"
-3. Pearson's correlation coefficient - Numeric data correlation
+The full dataset can be found here: link
 
-Since none of the features were correlated, I went forward with the Logistic regression process to estimate a model that would then be used to determine the density function and thereafter use kNN clustering to determine the most desirable customer segment.
+Now that we have our data and prediction question we can conduct our logistic regression analysis. This will help us understand the relationship between different variables and how they influence the outcome we're trying to predict. The logistic regression analysis will help us understand how each of these variables affects the likelihood of a subscription, and we can use this information to make informed predictions. The following steps were taken in conducting the logistic regression:
 
-The Logistic Regression process can be found in my previous post here: **Making Predictions using Logistic Regression**
-
-The density function derived from the estimated model was then used to carry out kNN clustering to determine the most desirable customer segment based on the highest peak obtained from the clustering. 
-
+1. Feature selection and model fitting 
+2. Model performance testing 
+3. New data predictions
 
 
 ## Feature Selection
 
-
-The total data set consists of 50 422 observations with 16 attributes (including the response variable). The data set was split into two sets; one set was used for the regression process, while the other was used to conduct the predictions. The two sets will be referred to as the “Regression set” and the “Prediction set” respectively. The regression set consisted of 45 211 observations and the prediction set consisted of 5 211 observations.
-
-The list of varibles considered were:
-
-| #   | Variable label   | Variable Description                                                                       |
-| --- |:---------------- |:------------------------------------------------------------------------------------------ |
-| 1   | age              | Numeric: Age of the client                                                                 |
-| 2   | job              | Categorical                                                                                |
-| 3   | marital          | Client's marital status                                                                    |
-| 4   | education        | Education level achieved                                                                   |
-| 5   | default          | Has credit in default?                                                                     |
-| 6   | housing          | Has a housing loan?                                                                        |
-| 7   | loan             | Has a personal loan?                                                                       |
-| 8   | contact          | Contact communication type                                                                 |
-| 9   | month            | Month of the year (Jan to Dec)                                                             |
-| 10  | campaign         | umber of contacts performed during the campaign and for the specific client                |
-| 11  | pdays            | Number of days that passed by after the client was last contacted from a previous campaign |
-| 12  | previous         | Number of times the client had been contacted before the campaign                          |
-| 13  | poutcomes        | Outcomes of previous marketing campaigns                                                   |
-| 14  | y                | Did the client subcribe a term deposit? (yes or no)                                        |
-
-The data consisted of both numeric (continuous) variables and categorical variables, therefore, to determine whether there was any correlation between the attributes the following three metrices were used:
+The total data set consisted of 50 422 observations with 16 attributes (including the response variable). The data set was split into two sets; one set was used for the regression process, while the other was used to conduct the predictions. The data consisted of both numeric (continuous) variables and categorical variables, therefore, to determine whether there was any correlation between the attributes the following three metrices were used:
 1. Contingency Coefficient ($\mathcal{C}$) - Categorical Data "coerrelation"
 2. One way ANOVA test - Categorical and Numerica data "correlation"
 3. Pearson's correlation coefficient - Numeric data correlation
@@ -122,8 +83,6 @@ The accuracy of the model was calculated to be approximately 92% similar to the 
 
 
 
-
-
 ### Step 3) New Data Predictions
 The logistic regression model was chosen to carry out the predictions on the “check2021” data because the model performed better in predicting the categorical outcome compared to the linear model. The approach followed was to fit the logistic model to the new data taking into account only the significant variables determined from the regression process (refer to Figure 16). The summary of the predicted results is presented in
 
@@ -134,14 +93,9 @@ The model predicted 165 possible subscriptions (≈ 3%) out of the 5211 clients.
 
 
 
-## Conclusions and Insights
-Both the Linear and Logistic regression models performed decently in predicting the outcomes, however the logistic regression performed slightly better with the added advantage of not having to conduct further data manipulation to calibrate the outcomes. In addition, the logistic regression model included more variables in the regression process that were computed as insignificant with the linear model regression. Thus, the logistic regression model provided more information regarding the possible influence of other factors not considered by the linear model.
-
-Overall, the logistic model was better suited to conducting the regression analysis given the categorical response variable. However, the use of a linear regression model was proven to be feasible, just more computationally expensive.
-
-The value lies in the interpretation of the results.
 
 
+So, now that you know what logistic regression is and how it works, it's time to get out there and start making some predictions! Whether you're trying to predict the likelihood of a customer making a purchase or the likelihood of a patient developing a certain disease, logistic regression can be a valuable tool for understanding the relationships between different variables and making informed predictions about the future. Just remember to keep an open mind and stay curious, because you never know what the future might hold!
 
 
 
