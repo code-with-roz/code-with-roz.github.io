@@ -27,7 +27,7 @@ Let's take the example of a Portugese bank that wanted to predict the likelihood
 | 13  | poutcomes        | Outcomes of previous marketing campaigns                                                   |
 | 14  | y                | Did the client subcribe a term deposit? (yes or no)                                        |
 
-The full dataset can be found here: link
+The full dataset can be found here: **link**
 
 Now that we have our data and prediction question we can conduct our logistic regression analysis. This will help us understand the relationship between different variables and how they influence the outcome we're trying to predict. The logistic regression analysis will help us understand how each of these variables affects the likelihood of a subscription, and we can use this information to make informed predictions. The following steps were taken in conducting the logistic regression:
 

@@ -4,26 +4,17 @@ title: About
 permalink: /about/
 ---
 
-[Reverie](https://github.com/amitmerchant1990/reverie) is a Jekyll theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
+## About
 
-This is a plug-and-play Jekyll theme which you can use on GitHub Pages without even setting up a local environment.
+I am a transport engineer turned data scientist. I am currently pursuing my Masters in Information Technology in Big Data Science at the University of Pretoria, where the focus of my research is in Machine Learning and NLP (particulary training large language models on African Languages). My expertise lies in solving problems through the process of problem statement formulation, and acquiring, processing, analysing and presenting data. 
 
-## Features
+### More about me
 
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
+I was born in Kenya, I have also lived in Tanzania and are currently residing in South Africa. My passions lie in doing impactful work. I am also an avid admirer of self expression and I have recently discovered a love for dance. I love to read and spend most of my downtime scouring through good books (A good story is food for the soul). When I'm not reading I like to go on excurions and connect with nature. All in all a lover of beautiful things and experiences. 
 
-Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
+### Contact me
+
+Rozina.Myoya@gmail.com
+
+
+
