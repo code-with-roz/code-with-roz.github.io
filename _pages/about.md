@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a transport engineer turned data scientist, and I'm currently pursuing a Masters in Information Technology with a focus on Big Data Science at the University of Pretoria. My research is centered on Machine Learning and NLP, with a particular interest in training large language models on African languages. As a data scientist, I have a strong skillset in problem-solving, including the ability to formulate clear problem statements, acquire, process, and analyze data, and present findings in a meaningful way. I'm excited to continue exploring the field of data science and using my skills to solve important problems.
+I'm a transport engineer turned data scientist, and I'm currently pursuing a Masters in Information Technology with a focus on Big Data Science at the University of Pretoria. My research is centered on Machine Learning and NLP, with a particular interest in training large language models on African languages. As a data scientist, I have a strong skillset in problem-solving, including the ability to formulate clear problem statements, acquire, process, and analyse data, and present findings in a meaningful way. I'm excited to continue exploring the field of data science and using my skills to solve important problems.
 
 ### More about me
 
